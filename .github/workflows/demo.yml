@@ -1,0 +1,16 @@
+name: demo ci
+on:
+  push:
+    branches: [main]
+
+jobs:
+  deme:
+    runs-on: ubuntu-latest
+    steps:
+      - name: demo ci started
+        uses: actions/checkout@v4
+
+      - name: running command
+        run: echo "hello world"
+      - name: show location
+        run: ls -ltr
